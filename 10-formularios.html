@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conhecendo a estrutura do elemento de formulário no HTML5.">
+    <title>Sobre Formulários - HTML</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #1c1c1c;
+            color: bisque;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid #fffbfb;
+            border-radius: 20px;
+            padding: 20px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        form button{
+            width: 150px;
+            height: 40px;
+            padding: 10px;
+            margin: auto;
+            background-color: blue;
+            border: 2px solid #fffbfb;
+            color: white;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        form button:hover{
+            background-color:black;
+            color: white;
+            width: 180px;
+            height: 45px;
+        }
+        .reset{
+            width: 150px;
+            height: 40px;
+            padding: 10px;
+            margin: auto;
+            background-color: red;
+            border: 2px solid #fffbfb;
+            color: white;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        .reset:hover{
+            background-color: white;
+            color: black;
+            width: 180px;
+            height: 45px;
+        }
+        form textarea{
+            width: 300px;
+        }
+        form strong{
+            color: red;
+        }
+        form a{
+            color: #fffbfb;
+            text-decoration: none;
+        }
+        form a:hover{
+            color: blue;
+        }
+        .newsletter{
+            display: flex;
+            flex-direction: row;
+        }
+        form fieldset{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid #fffbfb;
+            border-radius: 20px;
+            padding: 20px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        form fieldset button{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulários HTML</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que são formulários no HTML?</h2>
+            <p>Os formulários são uma das partes mais importantes do HTML pois ajudam a introduzir uma ideia diferente.</p>
+            <p>O usuário deixa de apenas consumir conteúdo e passa a fornecer dados para o sistema. </p>
+            <p>Um formulário de forma resumida, é uma área da página destinada a coleta de informações.</p>
+            <p>Exemplos de uso:</p>
+            <ul>
+                <li>Login</li>
+                <li>Cadastro</li>
+                <li>Contato</li>
+                <li>Pesquisa</li>
+                <li>Comentários</li>
+                <li>Endereço</li>
+                <li>Inscrições em Newsletter</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Criando um formulario basico</h2>
+             <p>exemplo de formulario de entrar em contato:</p>
+
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" name="nome">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+                
+                <label for="numero">Telefone</label>
+                <input type="number" id="numero" placeholder="+55 99999999999" name="numero">
+
+                <label for="mensagem">Fale conosco</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Deixe aqui sua mensagem e fale conosco" cols="30" rows="6" maxlength="200"></textarea>
+
+                <button onclick="MOSTRARMENSAGEM()">Enviar</button>
+
+                <ul>
+                    <li> <strong>&lt;label &gt;</strong> : representa um rotulo/etiqueta para um campo. É um recurso fundamental para a acessibilidade</li>
+                    <li><strong>For</strong> : para conectarmos o nosso rotulo (label) ao input, utilizamos o atributo FOR. ele serve para criar a relação  com o id do input</li>
+                    <li><strong>Id</strong> : esse atributo serve para identificar de forma unica um elemento dentro da pagina.</li>
+                    <li><strong>type</strong> : Esse atributo serve para definirmos o tipo de input que desejamos apresentar para o usuario com base no dado que queremos coletar.</li>
+                </ul>
+            </form>
+
+            <hr>
+            <h2>Explorando o formulario</h2>
+            <p>exemplo de formulario de login:</p>
+
+                <form action="">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+        
+                
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="*************">
+            
+
+                <button>Login / Cadastrar-se</button>
+
+                <a href="http://gmail.com" target="_blank">Esqueceu sua senha? clique aqui</a>
+
+            </form>
+
+            <hr>
+            <h2>Explorando o formulario</h2>
+            <p>exemplo de formulario de escolha de conteudo com checkbox:</p>
+
+                <form class="newsletter">
+
+                <label for="newsletter">Deseja receber novidades sobre nos?</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+
+
+            </form>
+
+            <h2>Formularios agrupados</h2>
+
+            <form action="">
+
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome"  placeholder="Ex: Bruçoides brucisfoides" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="bruçudo@safadudo.com" required>
+                    
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="dulaSenhaFoda123" required>
+
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+
+                    <label for="idade">Idade</label>
+                    <input type="number" name="idade" id="idade" placeholder="97 anos" required min="18" max="120">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="+55 (11) 9999-9999">
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Endereço</legend>
+
+
+                    <label for="rua">Endereço</label>
+                    <input type="text" name="rua" id="rua"  placeholder="Ex: Rua Dula safadula" required>
+
+                    <label for="UF">Estado</label>
+                    <!-- <input type="text" name="UF" id="UF"  placeholder="SP" required> -->
+                    <select name="UF" id="UF">
+                        <option value="">Selecione um estado</option>
+                        <option value="SP">SAO PAULO</option>
+                        <option value="BA">BAHIA</option>
+                        <option value="RJ">RIO DE JANEIRO</option>
+                        <option value="AM">AMAZONAS</option>
+                        <option value="PI">PIAUI</option>
+                    </select>
+
+
+                    <label for="numero_rua">Numero</label>
+                    <input type="number" name="numero_rua" id="numero_rua" placeholder="90" required min="1">
+
+
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" placeholder="09909-675" required min="1">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="ladybug">
+                        Ladybug
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="pica">
+                        Pica
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="rickAndMorty">
+                        Rick and Morty
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses">
+                        Call of duty
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="assistir">
+                        Assistir serie
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="programacao">
+                        Programação
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interesses" value="ler">
+                        Ler
+                    </label>
+
+                    
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Arquivos</legend>
+
+                    <label for="foto">Foto de perfil</label>
+                    <input type="file" name="foto" id="foto">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Termos e politica de privacidades</legend>
+
+                    <label>
+                        <input type="checkbox" name="termo" id="termo">
+                        Li e sou obrigado a aceitar, caso contrario, nao consigo usar o site
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="termo" id="termo">
+                        Concordo em nao processar o site/empresa pra poder usar essa birosca
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="termo" id="termo">
+                        Podem usar meus dados ai a vontade, nao tenho grana pra processar vocês
+                    </label>
+                </fieldset>
+                
+                <button type="submit">Criar cadastro</button>
+                <button type="reset" class="reset">Limpar</button>
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>o que sao listas HTML?</h1>
+    <p>Uma lista é uma sequencia de itens relacionados entre si. <br>
+        No html, existe principalmente, <strong>3 tipos de listas</strong> <br>
+        <em>Listas nao ordenadas</em>, <em>Listas ordenadas e</em> <em>Listas de descrição</em>
+    </p>
+    <hr>
+
+    <h2>Lista nao ordenada (ul)</h2>
+    <p>uma lista nao ordenada é usada quando a ordem dos elementos/itens nao importa</p>
+
+    <!-- ul = unordered list - lista nao ordenada -->
+    <ul>
+        <!-- li = list itens - itens da lista -->
+        <li>Banana</li>
+        <li>Maca</li>
+        <li>Arroz</li>
+        <li>Abacate</li>
+        <li>Frango</li>
+        <li>Manga</li>
+        <li>Feijão</li>
+    </ul>
+
+    <h2>Lista ordenada (ol)</h2>
+    <p>uma lista ordenada é usada quando os itens possuem uma sequencia, uma classificação, ou uma ordem que precisa ser
+        respeitada</p>
+
+    <!-- ol = Ordered list - Lista ordenada -->
+    <ol>
+        <!-- li = list itens - itens da lista -->
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+        <li>Jogar warzone</li>
+    </ol>
+
+    <h2>Lista de descrição (dl)</h2>
+    <p>Usamos uma lista de descrição quando precisamos descrever algum termo.</p>
+
+    <p>Para criarmos essa lista, utilizamos 3 elementos</p>
+
+    <ol>
+        <li><strong>dl (description list)</strong>: Representa a lista de descrição</li>
+        <li><strong>dt (description term)</strong>: Representa o termo /li>
+        <li><strong>dd (data descrição)</strong>: Representa a descrição do termo</li>
+    </ol>
+
+    <h3>Criando a lista de descrição</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem usada para estruturar a marcação de hipertexto de paginas da Web</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem usada para estilizar paginas da Web</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para adicionar interatividade/acoes das paginas Web</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Explorando ainda mais as listas</h2>
+    <h3>Listas aninhadas</h3>
+
+    <ul>
+        <li> <strong>Front-end</strong>
+            <ul>
+                <li>HTML </li>
+                <li>Javascript </li>
+                <li>Css </li>
+                <li>Figma </li>
+            </ul>
+        </li>
+
+        <li> <strong>Back-end</strong>
+            <ul>
+                <li>MySQL </li>
+                <li>Java </li>
+                <li>SQLite </li>
+                <li>Postgres </li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <h3>Formatando listas</h3>
+    <ul type="A"
+        style="color: rgb(255, 255, 255);;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger; background: linear-gradient(black,rgb(236, 20, 20)); padding: 10px;list-style: none;">
+        <li>Guto</li>
+        <li>Bruce</li>
+        <li>Giulia</li>
+        <li>Yuki safaduki</li>
+        <li>Kiarinha</li>
+        <li>Fi de kiarinha</li>
+    </ul>
+
+    <ol type="A"
+        style="color: rgb(255, 255, 255);;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: larger; background: linear-gradient(black,rgb(20, 236, 20)); padding: 10px;list-style: none;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ol>
+
+</body>
+
+</html>

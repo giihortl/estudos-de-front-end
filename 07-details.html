@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre details - HTML</title>
+</head>
+<style>
+    html{
+        background:linear-gradient(rgb(17, 134, 2),rgb(255, 255, 255));
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+   
+    }
+</style>
+<body>
+
+        <h1>Conhecendo o &lt;Details &gt; </h1>
+        <hr>
+        <h2>o que é &lt; details &gt;</h2>
+        <p>o &lt; details &gt; representa um conteudo que o usuario pode abrir e fechar.</p>
+
+        <details open >
+            <summary>O que é HTML</summary>
+
+            <p>HTML é a linguagem de marcação usada para estruturar paginas da web</p>
+        </details>
+
+        <details > 
+        <summary> Quais são as linguagens da WEB? </summary>  
+        <p> As principais linguagens da WEB são, <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheet">CSS </abbr> e JavaScript.</p>
+
+        <h3> Sobre as Linguagens </h3>
+        <ul> 
+            <li> <strong> HTML </strong>: Linguagem responsável pela estrutura de paginas web.
+            <li><strong> CSS </strong>: Linguagem responsável pela estilização de páginas web. </li>
+            <li> <strong> JavaScript </strong>: Linguagem responsável pela interatividade de páginas web.</li>
+        </ul>
+        </details>
+
+<hr>
+<h2> Elemento details como faq </h2>
+
+        <details name="faq"> 
+        <summary> O que é HTML </summary>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic neque pariatur minus doloribus nesciunt tempore similique inventore rerum quasi voluptatibus dolores alias consectetur magnam, tempora natus fugiat repudiandae labore!</p> 
+        </details>
+
+<details name="faq"> 
+        <summary> O que é CSS </summary>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic neque pariatur minus doloribus nesciunt tempore similique inventore rerum quasi voluptatibus dolores alias consectetur magnam, tempora natus fugiat repudiandae labore!</p> 
+        </details>
+
+        <details name="faq"> 
+        <summary> O que é JavaScript </summary>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic neque pariatur minus doloribus nesciunt tempore similique inventore rerum quasi voluptatibus dolores alias consectetur magnam, tempora natus fugiat repudiandae labore!</p> 
+        </details>
+    
+</body>
+</html>

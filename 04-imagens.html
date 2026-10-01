@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site HTML focado no aprendizado, uso e aplicação de tag sobre imagem.">
+    <title>Sobre Imagens / HTML</title>
+</head>
+<body>
+    <h1>Conhecendo Imagens</h1>
+    <hr>
+    <h2>Entendendo o elemento img</h2>
+    <img src="" alt="">
+    <ul>
+        <li> <strong>src</strong>: Indica onde está a imagem. O src significa source/fonte = origem</ul> </li> 
+        <ul>
+
+        <li> <strong>alt</strong>: o alt serve para descrever a imagem para quem não consegue ve-la, alem de ajudar na acessibilidade. O alt significa alternative/alternativo. </li>
+        
+        <ul> 
+            <hr>
+            <h3> Trabalhando com imagem externa </h3>
+            <img src="https://images.unsplash.com/photo-1789440783428-84ba516387c5?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Um animal peludo, conhecido como guaxinim, pelagem preta com tons cinzas e listras brancas, conhecido como ladrãozinho por ter a pelagem preta ao redor dos olhos, parecendo muito uma mascára de bandido de desenho animado. O guaxinim está se segurando em uma madeira, olhando diretamente para o fotógrafo." width=" 300px">
+
+            <h3> Trabalhando com imagens internas </h3>
+            <img src="img/bruçudo-e-guto.jpg" alt="Bruçudo e gutin posando pra foto. Bruçudo é um neném bochechudo e calvo e o gutin é um homem de moletom preto, tapando a boca e cabelos ondulados, na cor castanho escuro." width="300px"> 
+
+            <h3> Conhecendo o figure </h3>
+            <p> O elemento figure permite criar uma estrutura com uma legenda associada. </p>
+
+            <figure> 
+                <img src="img/bruçudo-e-guto.jpg" alt="homem segurando neném." width="300px">
+                <figcaption> Gutin e Bruçudo em um momento de pai e filho. </figcaption> 
+            </figure>
+
+            <hr>
+
+            <h2> Sobre os diferentes tipos de imagens </h2>
+            <p> Abaixo, temos uma lista dos diferentes tipos de imagens e quando usar: 
+                <ul> 
+                    <li> <strong> JPEG/JPG </strong>: Bom para fotos de produtos, paisagens e fotos, pois, possui muitas cores e possui um arquivo relativamente pequeno. 
+                    <br> Não suporta tranparencia e caso seja comprimida várias vezes, pode perder qualidade.</li>
+                    <li> <strong> PNG </strong>: Excelente escolha quando queremos transparencia e preservar bastante a qualidade.
+                        <br>Geralmente usamos para logos, imagens com tranparencia, graficos simples, etc.</li>
+                        <li><strong> WebP </strong>: Formato moderno desenvolvido para web.
+                        <br> Muito menor que JPEG E PNG, mantém a qualidade da imagem pois suporta compressão sem perda. Usamos para qualquer imagem comum na web.</li>
+                        <li><strong> AVIF </strong>: Assim como o formato WEBP, é um formato moderno e também é capaz de produzir arquivos bastante pequenos mantendo uma ótima qualidade. 
+                        <br> Geralmente usamos esse formato quando queremos priorizar performance.</li>
+                        <li> <strong> SVG </strong>: O SVG é um elemento vetorial, excelente para logos, icones, ilustrações, formas geometricas e graficos.
+                        <br> A vantagem desse elemento é que ele pode ser ampliado sem a mesma perda de nitidez de uma imagem baseada em PIXELS.</li><!DOCTYPE html>
+    <h1>O que é um Iframe?</h1>
+    <p>iframe significa <strong>inline frame</strong>.</p>
+    <p>Ele permite que você <em>incorpore</em> outra página/documento dentro da sua própria página HTML.</p>
+
+    <hr>
+
+    <h2>Criando um iframe básico</h2>
+    <iframe src="03-listas.html" frameborder="0" width="500" height="600"></iframe>
+    
+    <hr>
+    
+    <h2>Explorando outras formas de trabalhar com o iframe</h2>
+
+    <h3>Incorporando o YouTube</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pfEy4BNeJdw?si=rUyYn9VBuCB0STPO" title="Vídeo explicando como fazer um site." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                </ul>
+            </p>
+
+        
+</body>
+</html>
